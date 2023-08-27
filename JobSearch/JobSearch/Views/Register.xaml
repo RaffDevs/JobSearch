@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JobSearch.Views.Register">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="6*"/>
+                </Grid.ColumnDefinitions>
+                <ImageButton Source="back.png" 
+                             BackgroundColor="Transparent"
+                             HeightRequest="10"
+                             Margin="10,0,0,0"
+                             Clicked="Back"/>
+                <Label Text="JobSearch"
+                       Style="{StaticResource Title}"
+                       Grid.Column="1" />
+            </Grid>
+            
+            <BoxView Color="LightGray"
+                     HeightRequest="1"
+                     Margin="10,0,10,0" />
+            <Grid VerticalOptions="CenterAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <StackLayout>
+                    <Frame StyleClass="EntryFrame">
+                        <Entry Placeholder="Nome"
+                               Style="{StaticResource EntryField}" />
+                    </Frame>
+                    <Frame StyleClass="EntryFrame">
+                        <Entry Placeholder="Email"
+                               Style="{StaticResource EntryField}" />
+                    </Frame>
+                    <Frame StyleClass="EntryFrame">
+                        <Entry Placeholder="Senha"
+                               Style="{StaticResource EntryField}" />
+                    </Frame>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal"
+                             Grid.Row="1"
+                             Margin="15,0,15,0">
+                    <Button Text="Salvar"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Padding="20"
+                            Style="{StaticResource Button}" />
+                </StackLayout>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

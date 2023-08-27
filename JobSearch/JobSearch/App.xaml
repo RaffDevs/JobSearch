@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JobSearch.App">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <!--Colors-->
+            <Color x:Key="Background">#e4ece8</Color>
+            <Color x:Key="Primary">#4ab05e</Color>
+            <Color x:Key="Secondary">#86d274</Color>
+            <Color x:Key="GrayPrimary">#e1eae6</Color>
+            <Color x:Key="GraySecondary">#98a9a1</Color>
+            <Color x:Key="TextPrimary">#819888</Color>
+            <Color x:Key="TextSecondary">#c1cdc4</Color>
+
+             <!--Layout-->
+            <Style TargetType="ContentPage"
+                   ApplyToDerivedTypes="True">
+                <Setter Property="NavigationPage.HasNavigationBar"
+                        Value="False" />
+                <Setter Property="BackgroundColor"
+                        Value="{StaticResource Background}" />
+            </Style>
+
+            <!--Components-->
+            <Style TargetType="Label" x:Key="Title">
+                <Setter Property="FontSize"
+                        Value="25" />
+                <Setter Property="TextColor"
+                        Value="{StaticResource Primary}" />
+                <Setter Property="FontAttributes"
+                        Value="Bold" />
+                <Setter Property="Margin"
+                        Value="10" />
+            </Style>
+
+            <Style TargetType="Frame"
+                   Class="EntryFrame">
+                <Setter Property="Padding"
+                        Value="0" />
+                <Setter Property="CornerRadius"
+                        Value="5" />
+                <Setter Property="Margin"
+                        Value="15,10,15,0" />
+                <Setter Property="HasShadow"
+                        Value="False" />
+            </Style>
+            <Style TargetType="Entry"
+                   x:Key="EntryField">
+                <Setter Property="BackgroundColor" Value="{StaticResource GrayPrimary}" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="PlaceholderColor" Value="{StaticResource GraySecondary}" />
+                <Setter Property="HeightRequest"
+                        Value="60" />
+            </Style>
+
+            <Style TargetType="Button"
+                   x:Key="Button">
+                <Setter Property="BackgroundColor"
+                        Value="{StaticResource Primary}" />
+                <Setter Property="TextColor"
+                        Value="White" />
+                <Setter Property="CornerRadius"
+                        Value="5" />
+            </Style>
+
+
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>
