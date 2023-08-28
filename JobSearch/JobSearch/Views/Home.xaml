@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JobSearch.Views.Home">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="JobSearch"
+                       Style="{StaticResource Title}"
+                       Grid.Column="0" />
+
+                <Button Text="Adicionar"
+                        Style="{StaticResource Button}"
+                        Grid.Column="1"
+                        Margin="0,0,15,0"/>
+            </Grid>
+
+            <BoxView Color="LightGray"
+                     HeightRequest="1"
+                     Margin="10,0,10,0" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+
+                <Frame StyleClass="EntryFrame" 
+                       Grid.ColumnSpan="2">
+                    <Entry Placeholder="Procurar"
+                           Style="{StaticResource EntryField}" />
+                </Frame>
+                <Frame StyleClass="EntryFrame"
+                       Grid.Row="1"
+                       Grid.Column="0">
+                    <Entry Placeholder="Cidade/Estado"
+                           Style="{StaticResource EntryField}" />
+                </Frame>
+                <Button Text="Buscar"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Style="{StaticResource Button}" 
+                        Margin="0,0,15,0"/>
+            </Grid>
+
+            <Label Text="Resultados"
+                   Style="{StaticResource Text1}"
+                   Margin="10,10,0,0"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

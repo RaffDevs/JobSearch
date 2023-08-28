@@ -39,6 +39,7 @@
                             VerticalOptions="CenterAndExpand"
                             Padding="20"
                             Style="{StaticResource Button}"
+                            Clicked="GoHome"
                             />
                     <Button Text="Cadastrar"
                             HorizontalOptions="FillAndExpand"
